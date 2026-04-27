@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="overflow-x-hidden">
+    <div class="upper-header hidden lg:flex overflow-visible flex  items-stretch bg-[#032d60] text-[#fff] text-sm py-0 font-medium">
+        <div class="flex items-center gap-8 px-10 py-2 mr-auto">
+            <div class="flex items-center gap-2">
+                <i class="fa fa-envelope-o text-lg" aria-hidden="true"></i>
+                <span>info.itlearninginstitute@gmail.com</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <i class="fa fa-phone text-lg" aria-hidden="true"></i>
+                <span>9770622162</span>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 px-10">
+            <div class="px-6">
+                <a href="#" class="hover:underline">Login/Register</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <button class="bg-[#e65f23] px-6 py-2 h-full hover:bg-orange-700 transition-colors cursor-pointer">
+                    Book Free Demo
+                </button>
+
+                <button class="group relative bg-[#e65f23] px-6 py-2 h-full hover:bg-orange-700 transition-all cursor-pointer min-w-[120px] flex items-center justify-center">
+                    <span class="group-hover:hidden">Brochure</span>
+
+                    <span class="hidden group-hover:block">
+                        <i class="fa fa-cloud-download text-xl" aria-hidden="true"></i>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex justify-between items-center bg-white sticky top-0 z-99999">
+        <div class="logo px-10 py-4">
+            <img src="images/logo_stckey.png" alt="logo" class="h-14 w-auto object-contain">
+        </div>
+       <div class="fixed w-full bg-[#121217] justify-center top-20 flex menu-box px-10 py-4 
+            lg:static lg:bg-white lg:flex
+            hidden [&.active]:flex">
+    
+            <ul class="flex flex-col lg:flex-row items-center gap-[30px]">
+                <li>
+                    <a href="#" class="relative group text-white lg:text-[#043361] hover:text-[#E46C34] transition-all duration-300 ease-in-out font-semibold text-[17px] tracking-tight">
+                        Home
+                        <span class="absolute -bottom-1 left-0 w-0 group-hover:w-full  h-[2px] bg-gradient-to-r from-[#FF512F] via-[#F09891] to-[#FFCC33] rounded-full transition-all duration-300 ease-in-out"></span>
+                    </a>
+                    
+                </li>
+
+                <li class="flex items-center relative gap-1 group cursor-pointer dropdown-trigger">
+                    <a href="#" class="relative hidden lg:block group text-white lg:text-[#043361] hover:text-[#E46C34] transition-all duration-300 ease-in-out font-semibold text-[17px] tracking-tight">
+                        About Us
+                        <span class="absolute -bottom-1 left-0 w-0 group-hover:w-full  h-[2px] bg-gradient-to-r from-[#FF512F] via-[#F09891] to-[#FFCC33] rounded-full transition-all duration-300 ease-in-out"></span>
+                    </a>
+                    <i class="fa fa-angle-down text-white lg:text-[#043361] text-sm pt-0.5 hidden! lg:flex!" aria-hidden="true"></i>
+
+                    <div class="dropdownz-10 w-full lg:w-[200px]    lg:mt-2 
+                    opacity-100 visible static bg-transparent shadow-none
+                    lg:border-t-2 lg:border-[#e65f23] lg:shadow-lg lg:rounded-md lg:bg-white
+                    lg:absolute lg:top-full lg:right-0 lg:opacity-0 lg:invisible lg:group-hover:opacity-100 lg:group-hover:visible transition-opacity">
+
+                        <ul class="flex flex-col items-center lg:items-start">
+                            <li class="w-full text-center lg:text-left">
+                                <a href="#" class="relative group/drop inline-block px-4 py-2  font-semibold text-white lg:text-[#043361] text-[17px] lg:text-[15px] ">
+                                    About us
+                                    <span class="absolute bottom-1 left-0 w-0 group-hover/drop:w-full  h-[2px] bg-gradient-to-r from-[#FF512F] via-[#F09891] to-[#FFCC33] rounded-full transition-all duration-300 ease-in-out"></span>
+                                </a>
+                            </li>
+                            <li class="w-full text-center lg:text-left">
+                                <a href="#" class="relative group/drop inline-block px-4 py-2 text-white lg:text-[#043361] font-semibold text-[17px] lg:text-[15px]  ">
+                                    Founder & Director
+                                    <span class="absolute bottom-1 left-0 w-0 group-hover/drop:w-full  h-[2px] bg-gradient-to-r from-[#FF512F] via-[#F09891] to-[#FFCC33] rounded-full transition-all duration-300 ease-in-out"></span>
+                                </a>
+                            </li>
+                            <li class="w-full text-center lg:text-left">
+                                <a href="#" class="relative group/drop inline-block px-4 py-2 text-white lg:text-[#043361] font-semibold text-[17px] lg:text-[15px] ">
+                                    Gallery
+                                    <span class="absolute bottom-1 left-0 w-0 group-hover/drop:w-full  h-[2px] bg-gradient-to-r from-[#FF512F] via-[#F09891] to-[#FFCC33] rounded-full transition-all duration-300 ease-in-out"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#" class="relative group text-white lg:text-[#043361] hover:text-[#E46C34] transition-all duration-300 ease-in-out font-semibold text-[17px] tracking-tight">
+                    Courses
+                    <span class="absolute -bottom-1 left-0 w-0 group-hover:w-full  h-[2px] bg-gradient-to-r from-[#FF512F] via-[#F09891] to-[#FFCC33] rounded-full transition-all duration-300 ease-in-out"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="relative group text-white lg:text-[#043361] hover:text-[#E46C34] transition-all duration-300 ease-in-out font-semibold text-[17px] tracking-tight">
+                        Contact Us
+                        <span class="absolute -bottom-1 left-0 w-0 group-hover:w-full  h-[2px] bg-gradient-to-r from-[#FF512F] via-[#F09891] to-[#FFCC33] rounded-full transition-all duration-300 ease-in-out"></span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="#" class="relative group text-white lg:text-[#043361] hover:text-[#E46C34] transition-all duration-300 ease-in-out font-semibold text-[17px] tracking-tight">
+                        Placements
+                        <span class="absolute -bottom-1 left-0 w-0 group-hover:w-full  h-[2px] bg-gradient-to-r from-[#FF512F] via-[#F09891] to-[#FFCC33] rounded-full transition-all duration-300 ease-in-out"></span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="#" class="relative group text-white lg:text-[#043361] hover:text-[#E46C34] transition-all duration-300 ease-in-out font-semibold text-[17px] tracking-tight">
+                        Verification
+                        <span class="absolute -bottom-1 left-0 w-0 group-hover:w-full  h-[2px] bg-gradient-to-r from-[#FF512F] via-[#F09891] to-[#FFCC33] rounded-full transition-all duration-300 ease-in-out"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="relative group text-white lg:text-[#043361] hover:text-[#E46C34] transition-all duration-300 ease-in-out font-semibold text-[17px] tracking-tight">
+                        Contact
+                        <span class="absolute -bottom-1 left-0 w-0 group-hover:w-full  h-[2px] bg-gradient-to-r from-[#FF512F] via-[#F09891] to-[#FFCC33] rounded-full transition-all duration-300 ease-in-out"></span>
+                    </a>
+                </li>
+                <li class="flex relative group items-center gap-1 group cursor-pointer">
+                    <a href="#" class=" relative group text-white lg:text-[#043361] hover:text-[#E46C34] transition-all duration-300 ease-in-out font-semibold text-[17px] tracking-tight hidden lg:flex">
+                        Resources
+                        <span class="absolute -bottom-1 left-0 w-0 group-hover:w-full  h-[2px] bg-gradient-to-r from-[#FF512F] via-[#F09891] to-[#FFCC33] rounded-full transition-all duration-300 ease-in-out"></span>
+                    </a>
+                    <i class="fa fa-angle-down hidden! lg:flex! text-white lg:text-[#043361] text-sm pt-0.5" aria-hidden="true"></i>
+
+                   <div class="dropdownz-10 w-full lg:w-[200px]    lg:mt-2 
+                    opacity-100 visible static bg-transparent shadow-none
+                    lg:border-t-2 lg:border-[#e65f23] lg:shadow-lg lg:rounded-md lg:bg-white
+                    lg:absolute lg:top-full lg:right-0 lg:opacity-0 lg:invisible lg:group-hover:opacity-100 lg:group-hover:visible transition-opacity">
+                        <ul class="flex flex-col items-center lg:items-start">
+                            <li class="w-full text-center lg:text-left">
+                                <a href="#" class="relative group/drop inline-block px-4 py-2  font-semibold text-white lg:text-[#043361] text-[17px] lg:text-[15px]  tracking-tight">
+                                    HR + Technical Qs
+                                    <span class="absolute bottom-1 left-0 w-0 group-hover/drop:w-full  h-[2px] bg-gradient-to-r from-[#FF512F] via-[#F09891] to-[#FFCC33] rounded-full transition-all duration-300 ease-in-out"></span>
+                                </a>
+                            </li>
+                            <li class="w-full text-center lg:text-left">
+                                <a href="#" class="relative group/drop inline-block px-4 py-2  font-semibold text-white lg:text-[#043361] text-[17px] lg:text-[15px]  tracking-tight">
+                                    Tech Practice Questions
+                                    <span class="absolute bottom-1 left-0 w-0 group-hover/drop:w-full  h-[2px] bg-gradient-to-r from-[#FF512F] via-[#F09891] to-[#FFCC33] rounded-full transition-all duration-300 ease-in-out"></span>
+                                </a>
+                            </li>
+                            <li class="w-full text-center lg:text-left">
+                                <a href="#" class="relative group/drop inline-block px-4 py-2  font-semibold text-white lg:text-[#043361] text-[17px] lg:text-[15px] tracking-tight">
+                                    Online Test Series
+                                    <span class="absolute bottom-1 left-0 w-0 group-hover/drop:w-full  h-[2px] bg-gradient-to-r from-[#FF512F] via-[#F09891] to-[#FFCC33] rounded-full transition-all duration-300 ease-in-out"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-bar flex lg:hidden px-10 text-3xl cursor-pointer">
+            <i class="fa fa-bars text-[#E65F23]" aria-hidden="true"></i>
+        </div>
+    </div>
+
+    <div class="relative text-center group banner bg-[#F3C5B1] w-full h-[600px] bg-[url(images/banner2.webp)] bg-size-[auto_400px] bg-bottom  bg-no-repeat">
+        <div class="absolute sm:top-5 md:top-5 lg:top-5 left-1/2 -translate-x-1/2 w-[90%] max-w-4xl">
+            <p class="text-[#0B355D] font-bold text-[15px] sm:text-[18px] md:text-[20px] lg:text-[26px] py-6 px-4 text-center tracking-wide uppercase"    >
+                सिर्फ DEGREE से नहीं, SKILLFUL CODING से मिलती है PLACEMENT!
+            </p>
+            <p class="bg-white text-[#E46C34] text-[12px] sm:text-[13px]! md:text-[14px]! lg:text-[16px]!  font-medium py-3 px-6 rounded-lg text-center shadow-sm inline-block">
+                आपका भरोसा, हमारी ताक़त! इसी विश्वास के साथ IT Learning Institute बना रहा है Students की पहली पसंद।
+            </p>
+        </div>
+    </div>
+
+    <div class="bg-[#F8F9FA] grid grid-cols-1 lg:grid-cols-2 ">
+        <div class="flex flex-col gap-6 ps-3 lg:ps-20 py-10 ">
+            <h2 class="font-bold text-4xl text-[#0B355D] leading-tight">
+                Gwalior’s 
+                <span class="text-[#E46C34] ">Most Trusted Coding</span> 
+                Educational Platform
+            </h2>
+
+            <div class="text-gray-600 text-lg font-light">
+                <p>Unlock your potential by signing up with IT Learning Institute.</p>
+                <p>The most affordable learning solution.</p>
+            </div>
+
+            <div class="mt-4">
+                <button class="bg-[#0B355D] cursor-pointer text-white px-8 py-2 rounded-md font-semibold text-lg hover:bg-[#082a4a] transition-colors shadow-lg">
+                    Get Started
+                </button>
+            </div>
+        </div>
+
+
+        <div class="relative grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-10 py-10 w-full">
+            <div class="pt-20 relative ">
+                <div class="absolute top-29 z-10 left-5 size-3 rounded-full bg-[#E46C34]"></div>
+                <div class="absolute top-75 z-10 left-26 size-3 rounded-full bg-[#5DA9F6]"></div>
+                <div class=" flex justify-center items-center border-dotted border-2 border-gray-400 w-57 h-57  rounded-full animate-[spin_10s_linear_infinite]">
+                    <div class="animate-[spin_10s_linear_infinite] [animation-direction:reverse] relative">
+                        <img class="size-50 rounded-full" src="images/director2.jpg" alt="director-image">
+                            <div class="absolute overflow-hidden top-18 z-10 left-33 flex items-center">
+                                 <div class="w-0 h-0 
+                                    border-t-[1px] border-t-transparent 
+                                    border-r-[19px] border-r-[#003060] 
+                                    border-b-[20px] border-b-transparent">
+                                </div>
+                                <div class="size-3 rounded-sm bg-[#003060] w-50 h-12 p-1">
+                                    <p class="font-semibold text-white text-[11px] leading-tight tracking-wide ">
+                                        आईटी लर्निंग इंस्टीट्यूट – जहाँ हो रहे हैं लगातार अनगिनत प्लेसमेंट्स!
+                                    </p>
+                                </div>
+                            </div>
+                           
+                    </div>
+
+                </div>
+            </div>      
+
+            <div class="relative ">
+                <div class="absolute top-9 z-10 left-5 size-3 rounded-full bg-[#E46C34]"></div>
+                <div class="absolute top-55 z-10 left-26 size-3 rounded-full bg-[#5DA9F6]"></div>
+                <div class="absolute top-25 z-10 left-52 size-3 rounded-full bg-[#FF0000]"></div>
+                <div class="flex justify-center items-center border-dotted border-2 border-gray-400 w-57 h-57  rounded-full animate-[spin_10s_linear_infinite]">
+
+                    <div class="animate-[spin_10s_linear_infinite] [animation-direction:reverse]">
+                        <img class="size-50 rounded-full" src="images/tawk.jpg" alt="director-image">
+                          <div class="absolute top-12 right-33 z-20 flex items-center">
+    
+                            <div class="bg-white px-4 py-3 rounded-lg shadow-md border border-gray-100">
+                                <p class="font-semibold text-[#003060] text-[15px] leading-tight tracking-tight whitespace-nowrap">
+                                    Rahul Sir, What is IT Learning?
+                                </p>
+                            </div>
+
+                            <div class="w-0 h-0 
+                                border-t-[1px] border-t-transparent 
+                                border-l-[15px] border-l-white 
+                                border-b-[20px] border-b-transparent
+                                drop-shadow-sm -ml-[1px]">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>            
+        </div>
+    </div>
+
+
+    <div class="bg-[#F8F9FA]">
+        <h2 class=" text-center font-bold text-4xl text-[#0B355D] leading-tight">
+                Explore Top Courses 
+                <span class="text-[#E46C34] ">Categories</span> 
+        </h2>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-[20px] px-[30px] my-6 ">
+            <div class="p-3 shadow-md bg-white rounded-md">
+                <div class="relative">
+                    <img class="w-full h-50 object-cover rounded-md aspect:1/1" src="images/graphics_dsigning.jpg" alt="image">
+                    <div class="absolute bottom-5 rounded-sm left-8">
+                        <img class="size-13 border-2 border-white rounded-md object-contain" src="images/photoshop.png" alt="teacher">
+                    </div>
+
+                    <div class="absolute bottom-0 right-0">
+                        <img class="w-30 h-30 object-contain" src="images/teacher.png" alt="teacher">
+                    </div>
+                </div>
+                
+                <div class="flex justify-between mt-5">
+                    <div class="inline-block">
+                        <i class="fa fa-star text-[#F4BD0E]" aria-hidden="true"></i>
+                        <i class="fa fa-star text-[#F4BD0E]" aria-hidden="true"></i>
+                        <i class="fa fa-star text-[#F4BD0E]" aria-hidden="true"></i>
+                        <i class="fa fa-star text-[#F4BD0E]" aria-hidden="true"></i>
+                        <i class="fa fa-star text-[#F4BD0E]" aria-hidden="true"></i>
+
+                        <span class="text-gray-700 text-[16px]">4.9</span>
+                    </div>
+
+                    <div class="flex items-center gap-5">
+                        <div>
+                            <button class="px-[8px] py-[1px] bg-gray-200 rounded-lg">Hindi</button>
+                            <button class="px-[8px] py-[1px] bg-gray-200 rounded-lg">English</button>
+                        </div>
+                        <div>
+                            <i class="fa fa-whatsapp text-green-500 text-[21px]!" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                <div>
+                    <h2 class="mt-6 font-semibold text-[23px] text-[#0B355D]">
+                       Graphic Designing Certification Course
+                    </h2>
+                </div>
+
+                <div class="mt-6 flex justify-between items-center">
+                    <div class="flex items-center gap-3">
+                        <img class="size-10 rounded-full" src="images/director2.jpg" alt="image">
+                        <p><span class="text-gray-500">By</span> Rahul Lodhi</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <p class="text-[#0B355D] font-semibold text-lg">&#8377;20000</p>
+                        <span class="text-gray-400 font-semibold text-sm line-through">&#8377;25000</span>
+                    </div>
+                </div>
+
+                <div class="my-6 border-b border-gray-400 mx-[-12px]"></div>
+
+                <div class="w-full flex items-center gap-4">
+                    <a href="#" class="w-1/2 flex justify-center items-center uppercase border-1 px-8 py-2 text-[#0B355D] font-semibold rounded-md">
+                        Explore
+                    </a>
+                    <a href="#" class="w-1/2 flex justify-center items-center uppercase border-1 px-8 py-2 bg-[#0B355D] font-semibold text-white rounded-md">
+                        Buy Now
+                    </a>
+                </div>
+                
+            </div>
+
+            <div class="p-3 shadow-md relative bg-white rounded-md">
+                <div class="absolute top-0 -left-3 z-50">
+                    <img class="w-28 h-auto object-contain" src="images/offline.webp" alt="teacher">
+                </div>
+                <div class="relative">
+                    <img class="w-full h-50 object-cover rounded-md aspect:1/1" src="images/web_design.jpg" alt="image">
+                    <div class="absolute bottom-5 rounded-sm left-8">
+                        <img class="size-13 border-2 border-white rounded-md object-contain" src="images/html.png" alt="teacher">
+                    </div>
+
+                    <div class="absolute bottom-0 right-0">
+                        <img class="w-30 h-30 object-contain" src="images/teacher.png" alt="teacher">
+                    </div>
+                </div>
+                
+                <div class="flex justify-between mt-5">
+                    <div class="inline-block">
+                        <i class="fa fa-star text-[#F4BD0E]" aria-hidden="true"></i>
+                        <i class="fa fa-star text-[#F4BD0E]" aria-hidden="true"></i>
+                        <i class="fa fa-star text-[#F4BD0E]" aria-hidden="true"></i>
+                        <i class="fa fa-star text-[#F4BD0E]" aria-hidden="true"></i>
+                        <i class="fa fa-star text-[#F4BD0E]" aria-hidden="true"></i>
+
+                        <span class="text-gray-700 text-[16px]">4.9</span>
+                    </div>
+
+                    <div class="flex items-center gap-5">
+                        <div>
+                            <button class="px-[8px] py-[1px] bg-gray-200 rounded-lg">Hindi</button>
+                            <button class="px-[8px] py-[1px] bg-gray-200 rounded-lg">English</button>
+                        </div>
+                        <div>
+                            <i class="fa fa-whatsapp text-green-500 text-[21px]!" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                <div>
+                    <h2 class="mt-6 font-semibold text-[23px] text-[#0B355D]">
+                       Certified Web Designing Program with 100% Placement Support
+                    </h2>
+                </div>
+
+                <div class="mt-6 flex justify-between items-center">
+                    <div class="flex items-center gap-3">
+                        <img class="size-10 rounded-full" src="images/director2.jpg" alt="image">
+                        <p><span class="text-gray-500">By</span> Rahul Lodhi</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <p class="text-[#0B355D] font-semibold text-lg">&#8377;30000</p>
+                        <span class="text-gray-400 font-semibold text-sm line-through">&#8377;35000</span>
+                    </div>
+                </div>
+
+                <div class="my-6 border-b border-gray-400 mx-[-12px]"></div>
+
+                <div class="w-full flex items-center gap-4">
+                    <a href="#" class="w-1/2 flex justify-center items-center uppercase border-1 px-8 py-2 text-[#0B355D] font-semibold rounded-md">
+                        Explore
+                    </a>
+                    <a href="#" class="w-1/2 flex justify-center items-center uppercase border-1 px-8 py-2 bg-[#0B355D] font-semibold text-white rounded-md">
+                        Buy Now
+                    </a>
+                </div>
+                
+            </div>
+
+            <div class="p-3 shadow-md relative bg-white rounded-md">
+                <div class="absolute top-0 -left-3 z-50">
+                    <img class="w-28 object-contain" src="images/offline.webp" alt="teacher">
+                </div>
+                <div class="relative">
+                    <img class="w-full h-50 object-cover rounded-md aspect:1/1" src="images/webdevelopment.jpg" alt="image">
+                    <div class="absolute bottom-5 rounded-sm left-8">
+                        <img class="size-13 border-2 border-white rounded-md object-contain" src="images/java_script.png" alt="teacher">
+                    </div>
+
+                    <div class="absolute bottom-0 right-0">
+                        <img class="w-30 h-30 object-contain" src="images/teacher.png" alt="teacher">
+                    </div>
+                </div>
+                
+                <div class="flex justify-between mt-5">
+                    <div class="inline-block">
+                        <i class="fa fa-star text-[#F4BD0E]" aria-hidden="true"></i>
+                        <i class="fa fa-star text-[#F4BD0E]" aria-hidden="true"></i>
+                        <i class="fa fa-star text-[#F4BD0E]" aria-hidden="true"></i>
+                        <i class="fa fa-star text-[#F4BD0E]" aria-hidden="true"></i>
+                        <i class="fa fa-star text-[#F4BD0E]" aria-hidden="true"></i>
+
+                        <span class="text-gray-700 text-[16px]">4.9</span>
+                    </div>
+
+                    <div class="flex items-center gap-5">
+                        <div>
+                            <button class="px-[8px] py-[1px] bg-gray-200 rounded-lg">Hindi</button>
+                            <button class="px-[8px] py-[1px] bg-gray-200 rounded-lg">English</button>
+                        </div>
+                        <div>
+                            <i class="fa fa-whatsapp text-green-500 text-[21px]!" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                <div>
+                    <h2 class="mt-6 font-semibold text-[23px] text-[#0B355D]">
+                       Complete UI With Web Development Program
+                    </h2>
+                </div>
+
+                <div class="mt-6 flex justify-between items-center">
+                    <div class="flex items-center gap-3">
+                        <img class="size-10 rounded-full" src="images/director2.jpg" alt="image">
+                        <p><span class="text-gray-500">By</span> Rahul Lodhi</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <p class="text-[#0B355D] font-semibold text-lg">&#8377;20000</p>
+                        <span class="text-gray-400 font-semibold text-sm line-through">&#8377;25000</span>
+                    </div>
+                </div>
+
+                <div class="my-6 border-b border-gray-400 mx-[-12px]"></div>
+
+                <div class="w-full flex items-center gap-4">
+                    <a href="#" class="w-1/2 flex justify-center items-center uppercase border-1 px-8 py-2 text-[#0B355D] font-semibold rounded-md">
+                        Explore
+                    </a>
+                    <a href="#" class="w-1/2 flex justify-center items-center uppercase border-1 px-8 py-2 bg-[#0B355D] font-semibold text-white rounded-md">
+                        Buy Now
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-containt bg-[#0B355D] text-white pt-[100px] pb-[20px] px-[50px]">
+        <div class="footer grid grid-cols-1 lg:grid-cols-5 md:grid-cols-2 gap-10">
+            <div class="flex flex-col col-span-1 lg:col-span-2 lg:px-[65px]">
+                <div>
+                    <img class="w-40" src="images/main_logo.png" alt="logoimage">
+                </div>
+
+                <div class="mt-6">
+                    <p class="text-[#E9ECEF] text-md">IT Learning Institute, one of the best ISO 19001:2015 Certified IT Training and Skill Development Institutes in gwalior.</p>
+                </div>
+
+                <div class="mt-6">
+                    <a href="#" class="uppercase border-1 border-gray-500 rounded-full text-[14px] text-[#E9ECEF] font-semibold px-5 py-2">
+                        Contact with us
+                        <i class="fa fa-arrow-right ml-2" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <ul class="leading-[33px]">
+                    <li class="font-semibold text-xl mb-2">Useful Links</li>
+                    <li>
+                        <a href="#" class="text-[#E9ECEF] relative group/fl inline-block">
+                            Resume Builder
+                            <span class="absolute bottom-0 left-0 w-0 group-hover/fl:w-full  h-[2px] bg-gradient-to-r from-[#FF512F] via-[#F09891] to-[#FFCC33] rounded-full transition-all duration-300 ease-in-out"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-[#E9ECEF] relative group/fl inline-block">
+                            Verify Certificate
+                            <span class="absolute bottom-0 left-0 w-0 group-hover/fl:w-full  h-[2px] bg-gradient-to-r from-[#FF512F] via-[#F09891] to-[#FFCC33] rounded-full transition-all duration-300 ease-in-out"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-[#E9ECEF] relative group/fl inline-block">
+                            Online Fees Pay
+                            <span class="absolute bottom-0 left-0 w-0 group-hover/fl:w-full  h-[2px] bg-gradient-to-r from-[#FF512F] via-[#F09891] to-[#FFCC33] rounded-full transition-all duration-300 ease-in-out"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-[#E9ECEF] relative group/fl inline-block">
+                            Book Free Demo
+                            <span class="absolute bottom-0 left-0 w-0 group-hover/fl:w-full  h-[2px] bg-gradient-to-r from-[#FF512F] via-[#F09891] to-[#FFCC33] rounded-full transition-all duration-300 ease-in-out"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-[#E9ECEF] relative group/fl inline-block">
+                            Login/Register
+                            <span class="absolute bottom-0 left-0 w-0 group-hover/fl:w-full  h-[2px] bg-gradient-to-r from-[#FF512F] via-[#F09891] to-[#FFCC33] rounded-full transition-all duration-300 ease-in-out"></span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+
+            <div>
+                <ul class="leading-[33px]">
+                    <li class="font-semibold text-xl mb-2">Our Company</li>
+                    <li>
+                        <a href="#" class="text-[#E9ECEF] relative group/fl inline-block">
+                            About us
+                            <span class="absolute bottom-0 left-0 w-0 group-hover/fl:w-full  h-[2px] bg-gradient-to-r from-[#FF512F] via-[#F09891] to-[#FFCC33] rounded-full transition-all duration-300 ease-in-out"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-[#E9ECEF] relative group/fl inline-block">
+                            Our Courses
+                            <span class="absolute bottom-0 left-0 w-0 group-hover/fl:w-full  h-[2px] bg-gradient-to-r from-[#FF512F] via-[#F09891] to-[#FFCC33] rounded-full transition-all duration-300 ease-in-out"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-[#E9ECEF] relative group/fl inline-block">
+                            Our Skills
+                            <span class="absolute bottom-0 left-0 w-0 group-hover/fl:w-full  h-[2px] bg-gradient-to-r from-[#FF512F] via-[#F09891] to-[#FFCC33] rounded-full transition-all duration-300 ease-in-out"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-[#E9ECEF] relative group/fl inline-block">
+                            Download Mobile App
+                            <span class="absolute bottom-0 left-0 w-0 group-hover/fl:w-full  h-[2px] bg-gradient-to-r from-[#FF512F] via-[#F09891] to-[#FFCC33] rounded-full transition-all duration-300 ease-in-out"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-[#E9ECEF] relative group/fl inline-block">
+                            Contact
+                            <span class="absolute bottom-0 left-0 w-0 group-hover/fl:w-full  h-[2px] bg-gradient-to-r from-[#FF512F] via-[#F09891] to-[#FFCC33] rounded-full transition-all duration-300 ease-in-out"></span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div>
+                <ul class="leading-[33px]">
+                    <li class="font-semibold text-xl mb-2">Get Contact</li>
+                    <li>
+                        <a href="#" class="text-[#E9ECEF] relative group/fl inline-block">
+                            Phone : (+91) 9770622162
+                            <span class="absolute bottom-0 left-0 w-0 group-hover/fl:w-full  h-[2px] bg-gradient-to-r from-[#FF512F] via-[#F09891] to-[#FFCC33] rounded-full transition-all duration-300 ease-in-out"></span>
+                        </a>
+                    </li>
+                    <li class="mt-1">
+                        <a href="#" class="text-[#E9ECEF] relative group/fl inline-block leading-[20px]">
+                            <span class="mb-0 p-0">Email :</span>
+                            <span class="block mt-0 p-0">info.itlearninginstitute@gmail.com</span> 
+                            <span class="absolute bottom-0 left-0 w-0 group-hover/fl:w-full  h-[2px] bg-gradient-to-r from-[#FF512F] via-[#F09891] to-[#FFCC33] rounded-full transition-all duration-300 ease-in-out"></span>
+                        </a>
+                    </li>
+                    <li class="leading-[20px] mt-1">
+                        <span class="text-[#E9ECEF] ">Location : 2nd floor natraj gym char shahar ka naka gwalior</span>
+                    </li>
+
+                    <li class="mt-6">
+                        <div class="flex gap-6">
+                            <a  href="#" class="border-1 border-white rounded-md size-7 flex justify-center items-center">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="border-1 border-white rounded-md size-7 flex justify-center items-center">
+                                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="border-1 border-white rounded-md size-7 flex justify-center items-center">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                
+
+                </ul>
+            </div>
+
+
+
+        </div>
+
+        <div class="my-6 border-b-1 border-white border-solid"></div>
+
+        <div class="copy-right">
+            <p class="text-center text-[#E9ECEF] text-sm">© 2026 All Rights Reserved. Developed By <span class="text-[#E46C34]">IT Learning Institute</span></p>
+        </div>
+    </div>
+
+     <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    
+    <script>
+        $(document).ready(function() {
+            $(".menu-bar").click(function() {
+                $(".menu-box").toggleClass("active");
+            })
+
+            // $(".dropdown-trigger").click(function() {
+            //     $(".active").toggleClass("active")
+            // })
+
+            // $(".dropdown").click(function(e) {
+            //     e.stopPropagation();
+            // })
+        });
+    </script>
+</body>
+</html>
